@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+    <head>
+        <title>Listagem de Livros</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <h1>Listagem de Livros cadastrados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Ano de Lançamento</th>
+                    <th>Preço</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="livro : ${livros}">
+                    <td th:text="${livro.id}"></td>
+                    <td th:text="${livro.titulo}"></td>
+                    <td th:text="${livro.autor}"></td>
+                    <td th:text="${livro.anoLancamento}"></td>
+                    <td th:text="${livro.preco}"></td>
+                    <td>
+                        <a th:href="@{'/atualizar/' + ${livro.id}}">Editar</a>
+                    </td>
+                    <td>
+                        <!-- Formulário para deletar -->
+                        <form th:action="@{'/deletar/' + ${livro.id}}" method="post" style="display:inline;">
+                            <button class="td-form-button"type="submit" onclick="return confirm('Tem certeza que deseja deletar este livro?')">Deletar</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            <div class="links-container">
+                <a th:href="@{/cadastro}">Novo Livro</a>
+                <a th:href="@{/}">Voltar</a>
+            </div>
+        </footer>
+    </body>
+</html>

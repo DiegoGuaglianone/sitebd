@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fc;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título Principal */
+h1 {
+    text-align: center;
+    color: #3366cc;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilização da tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+table thead th {
+    background-color: #3366cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botões separados */
+td a, td form button {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3366cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: background-color 0.2s ease;
+    margin: 0 5px; /* Espaçamento entre botões */
+}
+
+td-form-button{
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3366cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: background-color 0.2s ease;
+    margin: 0 5px;
+}
+
+td a:hover, td form button:hover {
+    background-color: #2859a8;
+}
+
+td form {
+    margin: 0;
+    display: inline;
+}
+
+/* Centralização do formulário */
+form {
+    display: block; /* Corrige centralização no contexto de blocos */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto; /* Centraliza horizontalmente e dá espaço vertical */
+    font-family: Arial, sans-serif;
+    text-align: left; /* Garante alinhamento interno correto */
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3366cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: background-color 0.2s ease;
+    margin: 0 5px; /* Espaçamento entre botões */
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 16px;
+    padding: 10px;
+}
+
+footer a {
+    color: #3366cc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+footer .links-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .links-container a {
+    margin: 0 15px;
+}
