@@ -3,9 +3,9 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/dbzinho
-        username: postgres
-        password: 123456
+        url: jdbc:postgresql://PGPASSWORD=xA51T5Mu8jgytBVMimG06XfUpXXJrugy psql -h dpg-cstjual6l47c73elvejg-a.oregon-postgres.render.com -U banco_ay89_user banco_ay89
+        username: banco_ay89_user
+        password: xA51T5Mu8jgytBVMimG06XfUpXXJrugy
         driver-class-name: org.postgresql.Driver
         initialize: true
     
