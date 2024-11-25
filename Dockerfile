@@ -15,8 +15,8 @@ COPY src ./src
 # Permite executar o script mvnw
 RUN chmod 777 mvnw
 
-# Constrói o projeto e ignora testes
-RUN ./mvnw package -DskipTests
+# Constrói o projeto 
+RUN ./mvnw package 
 
 # Lista o diretório target para confirmar o nome do arquivo JAR
 RUN ls -l ./target
