@@ -15,6 +15,8 @@ COPY src ./src
 # Permite executar o script mvnw
 RUN chmod 777 mvnw
 
+RUN ls -l ./target
+
 # Constrói o projeto 
 RUN ./mvnw package 
 
